@@ -57,28 +57,121 @@ public class CalculadoraTest {
     }
 
     @Test
-    public void testMultiplicacion() {
+    public void testMultiplicacion1() {
         System.out.println("multiplicacion");
-        double a = 0.0;
+        double a = 4.0;
+        double b = -2.0;
+        Calculadora instance = new Calculadora();
+        double expResult = -8.0;
+        double result = instance.multiplicacion(a, b);
+        assertEquals(expResult, result, 0);
+        //fail("The test case is a prototype.");
+    }
+    @Test
+    public void testMultiplicacion2() {
+        System.out.println("multiplicacion");
+        double a = 4.0;
         double b = 0.0;
         Calculadora instance = new Calculadora();
         double expResult = 0.0;
         double result = instance.multiplicacion(a, b);
         assertEquals(expResult, result, 0);
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
+    }
+    @Test
+    public void testMultiplicacion3() {
+        System.out.println("multiplicacion");
+        double a = -2.0;
+        double b = -4.0;
+        Calculadora instance = new Calculadora();
+        double expResult = 8.0;
+        double result = instance.multiplicacion(a, b);
+        assertEquals(expResult, result, 0);
+        //fail("The test case is a prototype.");
+    }
+    @Test
+    public void testMultiplicacion4() {
+        System.out.println("multiplicacion");
+        double a = 4.0;
+        double b = 2.5;
+        Calculadora instance = new Calculadora();
+        double expResult = 10.0;
+        double result = instance.multiplicacion(a, b);
+        assertEquals(expResult, result, 0);
+        //fail("The test case is a prototype.");
+    }
+    @Test
+    public void testMultiplicacion5() {
+        System.out.println("multiplicacion");
+        double a = 10000000000000.00;
+        double b = 0.000000000001;
+        Calculadora instance = new Calculadora();
+        double expResult = 10.0;
+        double result = instance.multiplicacion(a, b);
+        assertEquals(expResult, result, 0);
+        //fail("The test case is a prototype.");
     }
 
     @Test
-    public void testDivision() {
+    public void testDivision1() {
         System.out.println("division");
-        double a = 0.0;
+        double a = 1.0;
         double b = 0.0;
         Calculadora instance = new Calculadora();
         double expResult = 0.0;
         double result = instance.division(a, b);
         assertEquals(expResult, result, 0);
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
+
+    @Test
+    public void testDivision2() {
+        System.out.println("division");
+        double a = -4.0;
+        double b = -2.0;
+        Calculadora instance = new Calculadora();
+        double expResult = 2.0;
+        double result = instance.division(a, b);
+        assertEquals(expResult, result, 0);
+        //fail("The test case is a prototype.");
+    }
+
+    @Test
+    public void testDivision3() {
+        System.out.println("division");
+        double a = 10000000000000.00;
+        double b = 0.000000000001;
+        Calculadora instance = new Calculadora();
+        double expResult = 1.e+25;
+        double result = instance.division(a, b);
+        assertEquals(expResult, result, 0);
+        //fail("The test case is a prototype.");
+    }
+
+    @Test
+    public void testDivision4() {
+        System.out.println("division");
+        double a = 1.0;
+        double b = 3.0;
+        Calculadora instance = new Calculadora();
+        double expResult = 0.3333333333333333;
+        double result = instance.division(a, b);
+        assertEquals(expResult, result, 0);
+        //fail("The test case is a prototype.");
+    }
+
+    @Test
+    public void testDivision5() {
+        System.out.println("division");
+        double a = 3.5;
+        double b = 2.0;
+        Calculadora instance = new Calculadora();
+        double expResult = 1.75;
+        double result = instance.division(a, b);
+        assertEquals(expResult, result, 0);
+        //fail("The test case is a prototype.");
+    }
+
 
     @Test
     public void testExponenciacion() {
