@@ -1,7 +1,6 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
-
 package com.mycompany.taller13;
 
 /**
@@ -11,6 +10,10 @@ package com.mycompany.taller13;
 public class Taller13 {
 
     public static void main(String[] args) {
+
         System.out.println("Hello World!");
+        Calculadora a= new Calculadora();
+        System.out.println(a.sumaDivisores(-2));
+
     }
 }
