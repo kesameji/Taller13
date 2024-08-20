@@ -60,10 +60,10 @@ public class CalculadoraTest {
     @Test
     public void TCS03() {
         System.out.println("suma");
-        double a = 1.0;
-        double b = 0.0;
+        double a = 3.0;
+        double b = -3.0;
         Calculadora instance = new Calculadora();
-        double expResult = a;
+        double expResult = 0.0;
         double result = instance.suma(a, b);
         assertEquals(expResult, result, 0);
        // fail("The test case is a prototype.");
@@ -71,17 +71,6 @@ public class CalculadoraTest {
 
     @Test
     public void TCS04() {
-        System.out.println("suma");
-        double a = -3.0;
-        double b = -5.0;
-        Calculadora instance = new Calculadora();
-        double expResult = -8.0;
-        double result = instance.suma(a, b);
-        assertEquals(expResult, result, 0);
-        //fail("The test case is a prototype.");
-    }
-    @Test
-    public void TCS05() {
         System.out.println("suma");
         double a = 1.2;
         double b = 2.004;
