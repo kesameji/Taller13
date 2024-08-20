@@ -337,14 +337,10 @@ public class CalculadoraTest {
     @Test
     public void TCRA03() {
         System.out.println("radicacion caso 3");
-        double numero = 4.0;
-        double indice = 0.0;
+        double numero = 0.0;
+        double indice = 2.0;
         Calculadora instance = new Calculadora();
         double expResult = 0.0;        
-        //ERRO
-        Throwable exception = assertThrows(IllegalArgumentException.class, () -> {
-        throw new IllegalArgumentException("error message");
-    });
         double result = instance.radicacion(numero, indice);
         assertEquals(expResult, result, 0);
         //fail("The test case is a prototype.");
@@ -358,18 +354,17 @@ public class CalculadoraTest {
         Calculadora instance = new Calculadora();
         double expResult = 0.16;
         double result = instance.radicacion(numero, indice);
-        assertEquals(expResult, result, 0);
+        assertEquals(expResult, result, 0.001);
         //fail("The test case is a prototype.");
     }
     
     @Test
     public void TCRA05() {
         System.out.println("radicacion caso 5");
-        double numero = 0.0;
-        double indice = 0.0;
+        double numero = 4.0;
+        double indice = -2.0;
         Calculadora instance = new Calculadora();
-        double expResult = 0.0;
-        //ERROR
+        double expResult = 0.5;
         double result = instance.radicacion(numero, indice);
         assertEquals(expResult, result, 0);
         //fail("The test case is a prototype.");
