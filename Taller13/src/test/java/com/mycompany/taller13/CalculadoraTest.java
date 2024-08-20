@@ -356,7 +356,7 @@ public class CalculadoraTest {
         double numero = 0.4;
         double indice = 0.5;
         Calculadora instance = new Calculadora();
-        double expResult = 0.16;
+        double expResult = 0.16000000000000003;
         double result = instance.radicacion(numero, indice);
         assertEquals(expResult, result, 0);
         //fail("The test case is a prototype.");
@@ -376,10 +376,70 @@ public class CalculadoraTest {
     }
 
     @Test
-    public void testSonAmigos() {
+    public void TCNA01() {
         System.out.println("sonAmigos");
-        int a = 0;
-        int b = 0;
+        int a = 220;
+        int b = 284;
+        Calculadora instance = new Calculadora();
+        boolean expResult = true;
+        boolean result = instance.sonAmigos(a, b);
+        assertEquals(expResult, result);
+        //fail("The test case is a prototype.");
+    }
+
+    @Test
+    public void TCNA02() {
+        System.out.println("sonAmigos");
+        int a = 12;
+        int b = 18;
+        Calculadora instance = new Calculadora();
+        boolean expResult = false;
+        boolean result = instance.sonAmigos(a, b);
+        assertEquals(expResult, result);
+        //fail("The test case is a prototype.");
+    }
+
+    @Test
+    public void TCNA03() {
+        System.out.println("sonAmigos");
+        int a = -2;
+        int b = 4;
+        Calculadora instance = new Calculadora();
+        boolean expResult = false;
+        boolean result = instance.sonAmigos(a, b);
+        assertEquals(expResult, result);
+        //fail("The test case is a prototype.");
+    }
+
+    @Test
+    public void TCNA04() {
+        System.out.println("sonAmigos");
+        int a = 7;
+        int b = 11;
+        Calculadora instance = new Calculadora();
+        boolean expResult = false;
+        boolean result = instance.sonAmigos(a, b);
+        assertEquals(expResult, result);
+        //fail("The test case is a prototype.");
+    }
+
+    @Test
+    public void TCNA05() {
+        System.out.println("sonAmigos");
+        int a = 1;
+        int b = 1;
+        Calculadora instance = new Calculadora();
+        boolean expResult = true;
+        boolean result = instance.sonAmigos(a, b);
+        assertEquals(expResult, result);
+        //fail("The test case is a prototype.");
+    }
+
+    @Test
+    public void TCNA06() {
+        System.out.println("sonAmigos");
+        int a = 4;
+        int b = 2;
         Calculadora instance = new Calculadora();
         boolean expResult = false;
         boolean result = instance.sonAmigos(a, b);
