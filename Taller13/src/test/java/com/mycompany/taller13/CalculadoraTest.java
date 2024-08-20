@@ -162,7 +162,6 @@ public class CalculadoraTest {
         double result = instance.multiplicacion(a, b);
         assertEquals(expResult, result, 0);
         //fail("The test case is a prototype.");
-<<<<<<< HEAD
     }
     @Test
     public void testMultiplicacion3() {
@@ -196,8 +195,6 @@ public class CalculadoraTest {
         double result = instance.multiplicacion(a, b);
         assertEquals(expResult, result, 0);
         //fail("The test case is a prototype.");
-=======
->>>>>>> 21fe1d7a5ca7fbcbc2a04897b51bad9b83db90a8
     }
 
     @Test
@@ -296,7 +293,6 @@ public class CalculadoraTest {
         assertEquals(expResult, result, 0);
         //fail("The test case is a prototype.");
     }
-    
     
     
     @Test
